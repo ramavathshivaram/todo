@@ -1,0 +1,33 @@
+@layer base {
+  body {
+    @apply bg-[#00171f] text-white;
+  }
+  
+  button {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  input, textarea {
+    @apply bg-[#003459]/20 border border-[#007ea7] rounded-lg p-2 text-white focus:ring-2 focus:ring-[#00a8e8] focus:border-transparent;
+  }
+  
+  .task-list-container {
+    @apply bg-[#003459]/10 backdrop-blur-lg border border-[#007ea7]/30 rounded-xl shadow-xl;
+  }
+  
+  .status-indicator {
+    @apply w-3 h-3 rounded-full;
+  }
+  
+  .status-indicator.pending {
+    @apply bg-yellow-500;
+  }
+  
+  .status-indicator.completed {
+    @apply bg-green-500;
+  }
+  
+  .status-indicator.skipped {
+    @apply bg-red-500;
+  }
+}
